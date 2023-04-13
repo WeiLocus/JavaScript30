@@ -1,9 +1,16 @@
 
 window.addEventListener('keydown', playSound)
+window.addEventListener('touchstart',playSound)
 
 function playSound(e) {
-  const audio = document.querySelector(`audio[data-key="${e.code}"]`)
-  const key = document.querySelector(`.key[data-key=${e.code}]`)
+  let code = null;
+  if (e.type === 'keydown') {
+    code = e.code;
+  } else if (e.type === 'touchstart') {
+    code = e.target.getAttribute('data-key');
+  }
+  const audio = document.querySelector(`audio[data-key="${code}"]`)
+  const key = document.querySelector(`.key[data-key=${code}]`)
   if (!audio) return
   audio.currentTime = 0;
   audio.play()
