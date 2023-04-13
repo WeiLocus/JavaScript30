@@ -1,10 +1,11 @@
 html {
   font-size: 10px;
-  background: url('./background.jpeg') bottom center;
-  background-size: cover;
+  background: url('./background.jpeg');
 }
 
 body,html {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -12,13 +13,14 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 6rem;
 }
 
 .key {
-  margin-inline: 1rem;
+  margin: 1rem;
   padding: 1rem 0.5rem;
   width: 6rem;
   text-align: center;
@@ -46,4 +48,21 @@ kbd {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 10px #ffc600;
+}
+
+@media (min-width: 768px) {
+  html {
+    background-size: cover;
+  }
+
+  .keys {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: unset;
+  }
+
+  .key {
+    margin-inline: 1rem;
+  }
 }
