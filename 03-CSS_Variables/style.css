@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #193549;
   color: #fff;
   text-align: center;
@@ -29,7 +29,6 @@ body {
 label {
   display: inline-block;
   width: 100px;
-  height: 100%;
 }
 
 input {
@@ -37,7 +36,7 @@ input {
 }
 
 img {
-  /* width: 500px; */
+  width: 600px;
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
@@ -45,6 +44,10 @@ img {
 
 
 @media (min-width: 768px) {
+  body {
+    font-weight: 100;
+    font-size: 30px;
+  }
   .controls {
     flex-direction: row;
     align-items: center;
