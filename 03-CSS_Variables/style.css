@@ -1,0 +1,56 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 0px;
+}
+
+body {
+  padding: 1rem;
+  background-color: #193549;
+  color: #fff;
+  text-align: center;
+}
+
+.text {
+  color: var(--base);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.div {
+  margin-bottom: 0.3rem;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+}
+
+input {
+  margin-right: 0.5rem;
+}
+
+img {
+  /* width: 500px; */
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+
+@media (min-width: 768px) {
+  .controls {
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+  }
+  label{
+    width: auto;  
+  }
+}
