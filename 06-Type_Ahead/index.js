@@ -4,6 +4,7 @@ let cities = []
 
 const searchInput = document.querySelector('.search')
 const suggestions = document.querySelector('.suggestions')
+const amount = document.querySelector('.amount')
 
 searchInput.addEventListener('change',displayMatches)
 searchInput.addEventListener('keyup',displayMatches)
@@ -28,7 +29,8 @@ function findMatches(keyword) {
   return filteredData
 }
 
-function displayMatches() {
+function displayMatches(e) {
+  if (e.target.value === 0) return
   const keyword = searchInput.value.trim().toLowerCase()
   const matchArray = findMatches(keyword)
   const htmlContent = matchArray.map(place => {
@@ -42,6 +44,10 @@ function displayMatches() {
       `
   }).join('')
   suggestions.innerHTML = htmlContent
+  amount.innerHTML = `match ${matchArray.length} `
+  if (e.target.value.trim() === '') {
+    amount.innerHTML = ''
+  }
 }
 
 // solution2
