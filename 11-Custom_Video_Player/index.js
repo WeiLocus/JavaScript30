@@ -80,3 +80,56 @@ progress.addEventListener('mousemove', (e) => mousedown && scrub(e))
 
 progress.addEventListener('mousedown',() => mousedown = true)
 progress.addEventListener('mouseup',() => mousedown = false)
+
+// fullScreen
+fullScreenBtn.addEventListener('click',openFullScreen)
+
+function openFullScreen(){
+  console.log('a')
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.mozRequestFullScreen) {
+    video.mozRequestFullScreen();
+  } else if (video.webkitRequestFullscreen) {
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) { 
+    video.msRequestFullscreen();
+  }
+}
+
+// fullScreenBtn.addEventListener('click', function (event) {
+//   const fullscreenElement =
+//     document.fullscreenElement ||
+//     document.mozFullScreenElement ||
+//     document.webkitFullscreenElement ||
+//     document.msFullscreenElement;
+//   if (fullscreenElement) {
+//     exitFullscreen();
+//   } else {
+//     launchIntoFullscreen(fullScreen);
+//   }
+// });
+
+// function launchIntoFullscreen(element) {
+//   if (element.requestFullscreen) {
+//     element.requestFullscreen();
+//   } else if (element.mozRequestFullScreen) {
+//     element.mozRequestFullScreen();
+//   } else if (element.webkitRequestFullscreen) {
+//     element.webkitRequestFullscreen();
+//   } else if (element.msRequestFullscreen) {
+//     element.msRequestFullscreen();
+//   } else {
+//     element.classList.toggle('fullscreen');
+//   }
+// }
+
+// function exitFullscreen() {
+//   if (document.exitFullscreen) {
+//     document.exitFullscreen();
+//   } else if (document.mozCancelFullScreen) {
+//     document.mozCancelFullScreen();
+//   } else if (document.webkitExitFullscreen) {
+//     document.webkitExitFullscreen();
+//   }
+// }
