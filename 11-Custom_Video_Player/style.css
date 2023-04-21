@@ -91,3 +91,12 @@ body {
   flex: 0;
   flex-basis: 10%;
 }
+
+label {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: transparent;
+}
