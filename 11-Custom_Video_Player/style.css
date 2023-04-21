@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #7A419B;
+  background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e3ae8 100%);
+  background-size: cover;
+}
+
+.player {
+  max-width: 750px;
+  position: relative;
+  border: 5px solid rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+  font-size: 0;
+  overflow: hidden;
+}
+
+.player__video {
+  width: 100%;
+}
+
+.player__button {
+  max-width: 50px;
+  background: none;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.player__button:focus {
+  border-color: #ffc600;
+}
+
+.player__slider {
+  /* width: 10x; */
+  height: 30px;
+}
+
+.player__controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* transform: translateY(100%) translateY(-5px); */
+  transition: all .3s;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.player:hover .player__controls {
+  transform: translateY(0);
+}
+
+.player:hover .progress {
+  height: 15px;
+}
+
+.player__controls>* {
+  flex: 1;
+}
+
+.progress {
+  position: relative;
+  display: flex;
+  flex: 10;
+  flex-basis: 100%;
+  background: rgba(0,0,0,0.5);
+  cursor: ew-resize;
+}
+
+.progress__filled {
+  width: 50%;
+  background: #ffc600;
+  flex: 0;
+  flex-basis: 10%;
+}
