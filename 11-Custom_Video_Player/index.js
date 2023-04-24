@@ -71,11 +71,11 @@ ranges.forEach(range => range.addEventListener('mousemove',handleRangeUpdate))
 
 let mousedown = false
 progress.addEventListener('click',scrub)
-// progress.addEventListener('mousemove', () => {
-//   if (mousedown) {
-//     scrub()
-//   }
-// })
+progress.addEventListener('mousemove', () => {
+  if (mousedown) {
+    scrub()
+  }
+})
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e))
 
 progress.addEventListener('mousedown',() => mousedown = true)
@@ -85,7 +85,6 @@ progress.addEventListener('mouseup',() => mousedown = false)
 fullScreenBtn.addEventListener('click',openFullScreen)
 
 function openFullScreen(){
-  console.log('a')
   if (video.requestFullscreen) {
     video.requestFullscreen();
   } else if (video.mozRequestFullScreen) {
