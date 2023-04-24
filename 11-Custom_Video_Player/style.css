@@ -49,7 +49,6 @@ body {
 }
 
 .player__slider {
-  /* width: 10x; */
   height: 30px;
 }
 
@@ -58,7 +57,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* transform: translateY(100%) translateY(-5px); */
+  transform: translateY(100%) translateY(-5px);
   transition: all .3s;
   flex-wrap: wrap;
   background: rgba(0, 0, 0, 0.1);
@@ -93,10 +92,14 @@ body {
 }
 
 label {
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   background: transparent;
+}
+
+input[type=range]:focus {
+  outline: none;
 }

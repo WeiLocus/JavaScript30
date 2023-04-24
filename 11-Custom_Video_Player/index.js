@@ -9,9 +9,11 @@ const skipButtons =player.querySelectorAll('[data-skip]')
 const fullScreenBtn = document.querySelector('.fullscreen')
 const fullScreen = document.querySelector('#fullscreen')
 
+const volume = document.querySelector('.volume')
+const speed = document.querySelector('.speed')
+
 // TODO :build out functions
 function togglePlay() {
-  console.log(this)
   // const method = video.paused ? 'play' : 'pause'
   // video[method]()
   if (video.paused) {
@@ -31,7 +33,6 @@ function updateButton(e) {
 function skip(e){
   // console.log(e.target.dataset.skip)
   video.currentTime += parseFloat(e.target.dataset.skip)
-  console.log(video.currentTime)
 }
 
 // handle input 
@@ -39,6 +40,12 @@ function handleRangeUpdate(e) {
   // console.log(e.target.value)
   // console.log(e.target.name)
   video[e.target.name] = e.target.value
+  if (e.target.name === 'playbackRate') {
+    speed.innerHTML = `speed ${e.target.value}`
+  }
+  if (e.target.name === 'volume') {
+    volume.innerHTML = `volume ${e.target.value}`
+  }
 }
 
 //handle progress
