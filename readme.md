@@ -7,7 +7,7 @@ Build 30 Things In 30 Days With 30 Tutorials
 ## JavaScript List
 | name | tag |demo | note |
 | -------- | -------- | -------- | -------- |
-| 01-JavaScript_Drum_Kit  | DOM & Interface / Audio   |      |
+| 01-JavaScript_Drum_Kit  | DOM & Interface / Audio   |  [demo](https://weilocus.github.io/JavaScript30/01-JavaScript_Drum_Kit/)    |
 | 02-JS_and_CSS_Clock | Fundamentals |[demo](https://weilocus.github.io/JavaScript30/02-JS_and_CSS_Clock/)     |     |
 | 03-CSS_Variables  | Fun + Experimental |[demo](https://weilocus.github.io/JavaScript30/03-CSS_Variables/)     |  |
 | 04-Array_Cardio_Day1 |Fundamentals |[demo](https://weilocus.github.io/JavaScript30/04-Array_Cardio_Day1/)     | [note](https://hackmd.io/@weii/rJ0UkBqMh/%2F-NRfAeQ7SP2l6746SgcytQ)  |
