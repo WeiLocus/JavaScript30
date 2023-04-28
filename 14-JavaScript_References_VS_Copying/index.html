@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Reference VS Copy</title>
+</head>
+<body>
+  <div>
+    <div>
+      <div>let age = 100</div>
+      <div>
+        <span>1.</span>
+        <span>make a copy of it : age2 = age</span>
+        <p class="copyNumber"></p>
+      </div>
+    </div>
+    <div>
+      <div>const players = ['Wes', 'Sarah', 'Ryan', 'Poppy']</div>
+      <div>
+        <span>1.</span>
+        <span>make a copy of it : const team = players</span>
+        <p>You might think we can just do something like this</p>
+        <p>team[3] = 'Lux'</p>
+        <p class="copyArray"></p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
