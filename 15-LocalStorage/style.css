@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background: url('./oh-la-la.jpeg') center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+svg {
+  fill: #fff;
+  margin-block: 50px;
+  padding: 20px;
+  width: 200px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+
+.plates {
+  margin: 0 0 10px 0;
+  padding: 0;
+  max-height: 250px;
+  list-style: none;
+  text-align: left;
+  overflow: scroll;
+}
+
+.plates li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 100;
+}
+
+.plates input {
+  display: none;
+}
+
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0,0,0,0.1)
+}
+
+.plates input + label:before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+
+.plates input:checked + label:before {
+  content: "🌮";
+  margin-right: 10px;
+}
