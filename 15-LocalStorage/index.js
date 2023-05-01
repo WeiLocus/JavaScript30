@@ -6,6 +6,7 @@ const items = JSON.parse(localStorage.getItem('items')) || []
 addItems.addEventListener('submit', addItem)
 renderList(items, itemsList);
 itemsList.addEventListener('click',toggleDone)
+itemsList.addEventListener('click',deleteItem)
 
 function addItem (e) {
   e.preventDefault()
@@ -31,17 +32,14 @@ function addItem (e) {
 function renderList (plates = [], platesList) {
   platesList.innerHTML = plates.map((plate, i) => {
     return `
-    <li>
+    <li class="item">
       <input type="checkbox" data-index=${i} id=item${i} ${plate.done? 'checked' : ''}>
       <label for=item${i}>${plate.text}</label>
+      <span data-index=${i} class="delete">x</span>
     </li>
   `
   }).join('')
 
-  console.log('platesList.scrollTop',platesList.scrollTop)
-  console.log('platesList.scrollHeight',platesList.scrollHeight)
-  console.log('platesList.offsetHeight',platesList.offsetHeight)
-  console.log(platesList.scrollHeight - platesList.offsetHeight)
   platesList.scrollTop = platesList.scrollHeight - platesList.offsetHeight;
 }
 
@@ -53,4 +51,13 @@ function toggleDone(e) {
   items[index].done = !items[index].done
   localStorage.setItem('items',JSON.stringify(items))
   renderList(items, itemsList)
+}
+
+function deleteItem(e) {
+  if (e.target.matches('.delete')) {
+    const index = e.target.dataset.index
+    items.splice(index,1)
+    localStorage.setItem('items',JSON.stringify(items))
+    renderList(items, itemsList)
+  }
 }
