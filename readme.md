@@ -20,6 +20,7 @@ Build 30 Things In 30 Days With 30 Tutorials
 | 11-Custom_Video_Player | Video| [demo](https://weilocus.github.io/JavaScript30/11-Custom_Video_Player/)     | [note](https://hackmd.io/@weii/rJ0UkBqMh/%2FGkIJkgPlS1GDUTaazHYPeg)    |
 | 12-Key_Sequence_Detection | Fundamentals | [demo](https://weilocus.github.io/JavaScript30/12-Key_Sequence_Detection/)     | [note](https://hackmd.io/H91f14BsSR2an49JK8EcIg)    |
 | 13-Slide_In_on_Scroll | DOM & Interface | [demo](https://weilocus.github.io/JavaScript30/13-Slide_In_on_Scroll/)     | [note](https://hackmd.io/b2MWY8SnS7uydZS2WG1OVw?both)    |
-
+| 14-JavaScript_References_VS_Copying | Fundamentals | [demo](https://weilocus.github.io/JavaScript30/14-JavaScript_References_VS_Copying/)     | [note](https://hackmd.io/QOMokxS1QEGGUjSebAO7EA)    |
+| 15-LocalStorage | DOM & Interface | [demo](https://weilocus.github.io/JavaScript30/15-LocalStorage/)     | [note](https://hackmd.io/UIBAaQXUT_CeV9z3tQW-Fw)    |
 ### more notes on hackmd
 [JavaScript 30 notes](https://hackmd.io/@weii/rJ0UkBqMh)
