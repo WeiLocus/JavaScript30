@@ -24,5 +24,6 @@ Build 30 Things In 30 Days With 30 Tutorials
 | 15-LocalStorage | DOM & Interface | [demo](https://weilocus.github.io/JavaScript30/15-LocalStorage/)     | [note](https://hackmd.io/@weii/ByVF7Wh73)    |
 | 16-Mouse_Move_Shadow | DOM & Interface | [demo](https://weilocus.github.io/JavaScript30/16-Mouse_Move_Shadow/)     | [note](https://hackmd.io/@weii/Hy3oDMfV2)    |
 | 17-Sort_Without_Articles | Fundamentals | [demo](https://weilocus.github.io/JavaScript30/17-Sort_Without_Articles/)     | [note](https://hackmd.io/@weii/rJrfoWLVh)    |
+| 18-Adding_Up_Times_with_Reduce | Fundamentals | [demo](https://weilocus.github.io/JavaScript30/18-Adding_Up_Times_with_Reduce/)  | [note](https://hackmd.io/@weii/HyZpKIPN2)    |
 ### more notes on hackmd
 [JavaScript 30 notes](https://hackmd.io/@weii/rJ0UkBqMh)
